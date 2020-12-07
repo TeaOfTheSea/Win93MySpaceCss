@@ -1,0 +1,80 @@
+/*Fwiend Removal*/
+	/*Variables*/
+		:root {
+			--userName: "FawkesMcCloud";
+			--headerSize: small;
+			--contactBox: small;
+			--bodySize: 15px;
+		}
+	/*Removal where only font-size is an issue*/
+		#hSub > a[href*="list"]{
+				font-size:0;
+			}
+			#hSub > a[href*="list"] > span:after{
+				font-size:var(--headerSize);
+				content:"User Directory"
+			}
+		#hSub > a[href*="all"]{
+				font-size:0;
+			}
+			#hSub > a[href*="all"] > span:after{
+				font-size:var(--headerSize);
+				content:"My Friends"
+			}
+		#add{
+				font-size: 0;
+			}
+			#add:after{
+				font-size: var(--contactBox);
+				content:"Add to Friends";
+			}
+		#hUp > a.blinkYellow{
+				font-size:0;
+			}
+			#hUp > a.blinkYellow:after{
+				font-size:var(--headerSize);
+				content: "New Friend Requests!";
+			}
+		#hUp > a[href*="all"] > span{
+				font-size:0;
+			}
+			#hUp > a[href*="all"] > span:after{
+				font-size:var(--headerSize);
+				content: "New Friends!";
+			}
+	/*Removal where name string is an issue*/
+		#container > div.topRight > div.box.fwiends > div.rightHead > b{
+				font-size:0;
+			}
+			#container > div.topRight > div.box.fwiends > div.rightHead > b:after{
+				font-size:var(--bodySize);
+				content:var(--userName) "'s Friends Space";
+			}
+		#container > div.topRight > div.box.fwiends > div.fwiendCounter > b{
+				font-size:0;
+			}
+			#container > div.topRight > div.box.fwiends > div.fwiendCounter > b:before{
+				font-size:var(--bodySize);
+				content:var(--userName) " has ";
+			}
+			#container > div.topRight > div.box.fwiends > div.fwiendCounter > b > span.fwiendCount{
+				font-size:var(--bodySize);
+			}
+			#container > div.topRight > div.box.fwiends > div.fwiendCounter > b:after{
+				font-size:var(--bodySize);
+				content:" friends.";
+			}
+		#viewFriends > b{
+				font-size:0;
+			}
+			#viewFriends > b:before{
+				font-size:var(--bodySize);
+				content:"View ";
+			}
+			#viewFriends > b > a{
+				font-size:var(--bodySize);
+			}
+			#viewFriends > b:after{
+				font-size:var(--bodySize);
+				content:" " var(--userName) "'s Friends";
+			}

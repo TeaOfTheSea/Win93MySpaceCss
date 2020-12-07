@@ -1,0 +1,127 @@
+/*Text Choices*/
+	/*Variables*/
+		:root {
+			    --font: Consolas;
+				--weight: 400;
+				--font-size: 17px;
+				--fontColor: #c8c8c8;
+				--linkColorUnvisited: #fff;
+				--linkDecorationUnvisited: underline;
+				--linkDecorationOnHover: underline;
+				--contactBoxLinksColor: #fff;
+				--contactBoxLinksDecoration: underline;
+				--mySpaceUrlLinksColor: #fff;
+				--mySpaceUrlLinksDecoration: underline;
+				--friendPageLinksColor: #fff;
+				--friendPageLinksDecoration: underline;
+				--subHeaderLinksColor: #fff;
+				--subHeaderLinksDecoration: underline;
+				--headerLinksColor: #fff;
+				--headerLinksDecoration: underline;
+				--footerLinksDecoration: underline;
+				--footerTwoLinksDecoration: underline;
+				--boxHeadColor: #fff;
+				--h4Color: #0000;
+				--rightHeadColor: #fff;
+				--friendCountColor: #fff;
+				--nameColor: #fff;
+				--commentColor: #000;
+		}
+	/*Standard Text*/	
+		body{
+			font-family: var(--font);
+			font-weight: var(--weight);
+			font-size: var(--font-size);
+			color: var(--fontColor);
+		}
+		.boxHead{
+			color: var(--boxHeadColor);
+		}
+		h4{
+			color: var(--h4Color);
+		}
+		.rightHead{
+			color: var(--rightHeadColor);
+		}
+		.fwiendCount {
+			color: var(--friendCountColor);
+		}
+		#name{
+			color: var(--nameColor);
+		}
+		#userWall > tbody > tr > td.tableRight{
+			color: var(--commentColor);
+		}
+	/* Links */
+		a:link {
+			color: var(--linkColorUnvisited);
+			text-decoration: var(--linkDecorationUnvisited);
+		}
+
+		a:visited {
+			color: var(--linkColorUnvisited);
+			text-decoration: var(--linkDecorationUnvisited);
+		}
+
+		a:active {
+			color: var(--linkColorUnvisited);
+			text-decoration: var(--linkDecorationUnvisited);
+		}
+		a:hover {
+			text-decoration: var(--linkDecorationOnHover);
+		}
+		.boxButton {
+			color: var(--contactBoxLinksColor);
+			text-decoration: var(--contactBoxLinksDecoration);
+		}
+		#container > div.topLeft > div.url.box > div:nth-child(2) > a{
+			color: var(--mySpaceUrlLinksColor) !important;
+			text-decoration: var(--mySpaceUrlLinksDecoration) !important;
+		}
+		#top a{
+			color: var(--friendPageLinksColor);
+			text-decoration: var(--friendPageLinksDecoration);
+		}
+		#hSub a {
+			color: var(--subHeaderLinksColor);
+			text-decoration: var(--subHeaderLinksDecoration);
+		}
+		#header a:not(.logo){
+			color: var(--headerLinksColor);
+			text-decoration: var(--headerLinksDecoration);
+		}
+		#footer a{
+			text-decoration: var(--footerLinksDecoration);
+		}
+		#footer > div > p > a:nth-child(5){
+			text-decoration: var(--footerTwoLinksDecoration) !important;
+		}
+
+/*Colors of not text */
+	/*Variables*/
+		:root {
+			--background: #222;
+			--primaryColor: #5ea5cf;
+			--secondaryColor: #82c6d9;
+		}
+	body{
+		background: var(--background);
+	}
+	div#header{
+		background: var(--primaryColor);
+	}
+	.rightHead{
+		background: var(--primaryColor);
+	}
+	.boxHead{
+		background: var(--primaryColor);
+	}
+	.tableLeft{
+		background: var(--primaryColor);
+	}
+	div#hSub{
+		background: var(--secondaryColor);
+	}
+	.tableRight{
+		background: var(--secondaryColor);
+	}

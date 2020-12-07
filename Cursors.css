@@ -1,0 +1,35 @@
+/*Cursors
+	You can use all of these https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor and */
+	/*Variables*/
+		:root {
+			--cursor: url(https://cur.cursors-4u.net/cursors/cur-8/cur760.cur);
+		}
+	body {
+        cursor: var(--cursor), auto !important; 
+    }
+    a:-webkit-any-link {
+        cursor: var(--cursor), auto !important;
+    }
+    .avatar {
+        cursor: var(--cursor), auto !important;
+    }
+    #imgPreview img {
+        cursor: var(--cursor), auto !important;
+    }
+    #imgPreview {
+        cursor: var(--cursor), auto !important;
+    }
+	button {
+        cursor: var(--cursor), auto !important;
+    }
+	button {
+        cursor: var(--cursor), auto !important;
+    }
+	input {
+        cursor: var(--cursor), auto !important;
+    }
+	/* This is commented out because I have a seperate section of code for everything related to the textbox but if you aren't using that uncomment this code.
+	textarea {
+        cursor: var(--cursor), auto !important;
+    }
+	*/

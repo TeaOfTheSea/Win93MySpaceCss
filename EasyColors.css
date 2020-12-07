@@ -5,8 +5,8 @@
 				--weight: 400;
 				--font-size: 17px;
 				--fontColor: #c8c8c8;
-				--linkColorUnvisited: #fff;
-				--linkDecorationUnvisited: underline;
+				--linkColor: #fff;
+				--linkDecoration: underline;
 				--linkDecorationOnHover: underline;
 				--contactBoxLinksColor: #fff;
 				--contactBoxLinksDecoration: underline;
@@ -54,18 +54,18 @@
 		}
 	/* Links */
 		a:link {
-			color: var(--linkColorUnvisited);
-			text-decoration: var(--linkDecorationUnvisited);
+			color: var(--linkColor);
+			text-decoration: var(--linkDecoration);
 		}
 
 		a:visited {
-			color: var(--linkColorUnvisited);
-			text-decoration: var(--linkDecorationUnvisited);
+			color: var(--linkColor);
+			text-decoration: var(--linkDecoration);
 		}
 
 		a:active {
-			color: var(--linkColorUnvisited);
-			text-decoration: var(--linkDecorationUnvisited);
+			color: var(--linkColor);
+			text-decoration: var(--linkDecoration);
 		}
 		a:hover {
 			text-decoration: var(--linkDecorationOnHover);

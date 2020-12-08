@@ -1,0 +1,153 @@
+/*Other*/
+	/*Removing Contact Box Pictures*/
+        #report{
+              background-image: url(null);
+        }
+        #block{
+              background-image: url(null);
+        }
+        #add{
+              background-image: url(null);
+        }
+        #sMsg{
+              background-image: url(null);
+        }
+        .boxButton {
+              padding-left: 0px;
+              padding-top: 0px;
+        }
+	/*Make Image Rendering not Shit*/
+		img{
+			image-rendering: initial;
+		}
+	/*Don't show friend faces*/
+		.fwiendFace img {
+			width: calc(0% );
+		}
+
+    /*Black box around friend names*/
+		.fwiendFace {
+              border: 1px solid #000;
+        }
+		
+    /* Commment images begone */
+        .tableLeft img{
+              max-width: calc(0%);
+        }
+
+	/* Remove About me and who i'd like to meet header */
+		h4{
+			font-size: 0;
+		}
+	
+	/*Removing the margin under blurbs*/
+		.blurbs{
+			margin-bottom: 0;
+		}
+	
+	/* Remove who I want to meet section */
+		#who > p{
+			font-size:0;
+		}
+		
+	/*Remove user Quote*/
+		#container > div.topLeft > table > tbody > tr > td.shortRight > div:nth-child(1){
+			font-size:0;
+		}
+		#container > div.topLeft.blogCard > div:nth-child(2){
+			font-size:0;
+		}
+		
+	/*Changing the contact friend and message text*/
+		#add{
+				font-size: 0;
+			}
+			#add:after{
+				font-size: var(--contactBox);
+				content:"Friend";
+			}
+		#sMsg{
+				font-size: 0;
+			}
+            #sMsg:after{
+                font-size: var(--contactBox);
+                content:"Message";
+            }
+			
+	/*Nice two lines that allow for longer usernames in the comment section without text-wrapping*/
+		.tableLeft{padding: 0;}
+		.tableLeft > a > div{max-width: none;}
+	
+	/*Change location*/
+		#country{font-size:0 !important}
+            #country:after{
+                font-size: var(--bodySize);
+                content:"Meatspace";
+            }
+			
+	/*Make the secondary header dividers invisible */
+		div#hSub{
+			color: #0000;
+		}
+		
+	/*"About FawkesMcCloud" isntead of "FawkesMcCloud's Blurbs"*/
+	    #container > div.topRight > div.box.blurbs > div.rightHead > b{
+				font-size: 0;
+			}
+            #container > div.topRight > div.box.blurbs > div.rightHead > b:after{
+                font-size: var(--bodySize);
+                content:"About FawkesMcCloud:";
+            }
+
+	/*Changing "FawkesMcCloud's friend space" to "FawkesMcCloud's friends"*/
+	    #container > div.topRight > div.box.fwiends > div.rightHead > b{
+				font-size: 0;
+			}
+            #container > div.topRight > div.box.fwiends > div.rightHead > b:after{
+                font-size: var(--bodySize);
+                content:"FawkesMcCloud's Friends:";
+			}
+			
+	/*Getting rid of the MySpace Url label*/
+		#container > div.topLeft > div.url.box > div:nth-child(1){
+			font-size: 0;
+		}
+		
+	/*Combining Url and contact box*/
+		.boxInfo{
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+		#container > div.topLeft > div.boxInfo.box > a{
+			padding-left: 2px;
+		}
+		.url {
+			border: 1px solid #000;
+			border-top: none;
+			padding: 0px;
+			padding-left: 2px;
+		}
+		#container > div.topLeft > div.url.box > div:nth-child(2){
+			padding-bottom: 2px;
+		}
+		#container > div.topLeft.blogCard > div.boxInfo.box{
+			border: 1px solid #000;
+		}
+		
+	/*Stop flashing elements from animating*/
+		    @keyframes stopIt{
+                color: #fff;
+            text-decoration: underline;
+            }
+            .blinkViolet{
+				animation:stopIt infinite;
+            }
+			.blinkRed{
+				animation:stopIt infinite;
+            }
+            .blinkYellow{
+				animation:stopIt infinite;
+            }
+            .blinkGreen{
+				animation:stopIt infinite;
+            }

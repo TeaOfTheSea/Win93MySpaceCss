@@ -1,0 +1,16 @@
+/*Text box*/
+	/*Variables*/
+		:root {
+			--textBoxFontName: Consolas;
+			--textBoxFontSize: 15px;
+			--textBoxFontWeight: 400;
+			--textBoxTextColor: #fff;
+			--textBoxBackground: #82c6d9;
+			--textBoxCursor: url(https://cur.cursors-4u.net/cursors/cur-8/cur760.cur), auto;
+		}
+	#commentInput{
+		font: var(--textBoxFontWeight) var(--textBoxFontSize) var(--textBoxFontName);
+		color: var(--textBoxTextColor);
+		background: var(--textBoxBackground);
+		cursor:var(--textBoxCursor) !important;
+	}

@@ -17,7 +17,7 @@
 		cursor: var(--cursor) !important;
 	}
 	#imgPreview {
-	cursor: var(--cursor) !important;
+		cursor: var(--cursor) !important;
 	}	
 	button {
 		cursor: var(--cursor) !important;
